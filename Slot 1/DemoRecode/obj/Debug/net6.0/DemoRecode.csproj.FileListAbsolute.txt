@@ -1,0 +1,14 @@
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\bin\Debug\net6.0\DemoRecode.exe
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\bin\Debug\net6.0\DemoRecode.deps.json
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\bin\Debug\net6.0\DemoRecode.runtimeconfig.json
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\bin\Debug\net6.0\DemoRecode.dll
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\bin\Debug\net6.0\DemoRecode.pdb
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.AssemblyInfoInputs.cache
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.AssemblyInfo.cs
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.csproj.CoreCompileInputs.cache
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.dll
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\refint\DemoRecode.dll
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.pdb
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\DemoRecode.genruntimeconfig.cache
+D:\PRN231 Projects and Demos\Slot 1\DemoRecode\obj\Debug\net6.0\ref\DemoRecode.dll
