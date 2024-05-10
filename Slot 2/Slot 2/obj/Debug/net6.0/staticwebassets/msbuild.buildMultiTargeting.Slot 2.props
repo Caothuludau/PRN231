@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Slot 2.props" />
+</Project>

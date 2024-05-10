@@ -1,0 +1,33 @@
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\appsettings.Development.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\appsettings.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Slot 2.exe
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Slot 2.deps.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Slot 2.runtimeconfig.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Slot 2.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Slot 2.pdb
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.csproj.AssemblyReference.cache
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.AssemblyInfoInputs.cache
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.AssemblyInfo.cs
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.csproj.CoreCompileInputs.cache
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.MvcApplicationPartsAssemblyInfo.cs
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.MvcApplicationPartsAssemblyInfo.cache
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.sourcelink.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets.build.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets.development.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets\msbuild.Slot 2.Microsoft.AspNetCore.StaticWebAssets.props
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets\msbuild.build.Slot 2.props
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Slot 2.props
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Slot 2.props
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\staticwebassets.pack.json
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\scopedcss\bundle\Slot 2.styles.css
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.csproj.CopyComplete
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\refint\Slot 2.dll
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.pdb
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\Slot 2.genruntimeconfig.cache
+D:\PRN231 Projects and Demos\Slot 2\Slot 2\obj\Debug\net6.0\ref\Slot 2.dll
