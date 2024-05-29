@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PE1_NonPreCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e208277ffc6ad4920bc7f2bdef206ec6840f5c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47fc189b2fc95a26564237f2f89938e81761fb98")]
 [assembly: System.Reflection.AssemblyProductAttribute("PE1_NonPreCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PE1_NonPreCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

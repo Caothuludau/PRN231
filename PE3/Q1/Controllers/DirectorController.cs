@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Components.Forms;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Q1.DTOs;
@@ -86,32 +87,43 @@ namespace Q1.Controllers
 
 
         [HttpPost("director/create")]
-        public IActionResult addDirector([FromBody] Director inputData)
+        public IActionResult addDirector(List<Director> listDirector)
         {
-            if (inputData == null || string.IsNullOrEmpty(inputData.FullName))
+            if (listDirector == null)
             {
                 return BadRequest("Invalid input data.");
             }
-
-            try
+            else
             {
-                var director = new Director
+                foreach (Director director in listDirector)
                 {
-                    FullName = inputData.FullName,
-                    Male = inputData.Male,
-                    Dob = inputData.Dob,
-                    Nationality = inputData.Nationality,
-                    Description = inputData.Description
-                };
+                    if (string.IsNullOrEmpty(director.FullName))
+                    {
+                        return BadRequest("Invalid input data.");
+                    }
 
-                _context.Directors.Add(director);
+                    try
+                    {
+                        var d = new Director
+                        {
+                            FullName = director.FullName,
+                            Male = director.Male,
+                            Dob = director.Dob,
+                            Nationality = director.Nationality,
+                            Description = director.Description
+                        };
+
+                        _context.Directors.Add(d);
+                    }
+                    catch (Exception ex)
+                    {
+                        return Conflict(new { message = "There is an error while adding.", error = ex.Message });
+                    }
+                }
+
                 var recordsAdded = _context.SaveChanges();
 
                 return Ok(recordsAdded);
-            }
-            catch (Exception ex)
-            {
-                return Conflict(new { message = "There is an error while adding.", error = ex.Message });
             }
         }
     }
