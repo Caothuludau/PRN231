@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert Movie</title>
+    <link rel="stylesheet" href="/css/InsertMovie.css">
+</head>
+<body>
+    <form action="/admin/movies/add" method="POST" enctype="multipart/form-data">
+        <br> Title: <input type="text" name="title">
+        <br> Redob: <input type="date" name="redob">
+        <br> Duration: <input type="number" name="duration" style="width: 340px; height: 40px;">
+        <br> Rate: 
+        <select id="rate" name="ratingid">
+            <option value="1">G - General Audiences</option>
+            <option value="2">PG - Parental Guidance</option>
+            <option value="3">PG-13 - Parents Strongly Cautioned</option>
+            <option value="4">R - Restricted</option>
+            <option value="5">NC-17 - Adults Only</option>
+            <!-- Add more options as needed -->
+        </select> 
+        <br> Description: <input type="text" name="mdesc">
+        <br> Poster: 
+        <div id="poster-container" ondrop="handleFileSelect(event)" ondragover="handleDragOver(event)">
+            Drag and drop images here
+            <input type="file" name="poster" id="poster-input">
+        </div>
+        <input type="text" id="poster" name="poster" style="display: none;">
+        <img id="poster-preview" src="#" alt="Poster Preview" style="display: none;">
+        <br> View: <input type="text" name="view">
+        <br> <input type="submit" name="submit" value="Add">
+    </form>
+
+    <script>
+        function handleFileSelect(evt) {
+            evt.stopPropagation();
+            evt.preventDefault();
+
+            var files = evt.dataTransfer.files; // Get the list of files dropped
+
+            // Process each file
+            for (var i = 0, f; f = files[i]; i++) {
+                // Set the value of the input field to the file name
+                var inputElement = document.getElementById('poster');
+                inputElement.value = f.name;
+
+                // Display a preview of the file (optional)
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var previewElement = document.getElementById('poster-preview');
+                    previewElement.src = e.target.result;
+                    previewElement.style.display = 'block';
+                };
+                reader.readAsDataURL(f);
+            }
+        }
+
+        function handleDragOver(evt) {
+            evt.stopPropagation();
+            evt.preventDefault();
+            evt.dataTransfer.dropEffect = 'copy'; // Show the "copy" cursor when dragging over
+        }
+
+        // Set up event listeners
+        var posterContainer = document.getElementById('poster-container');
+        posterContainer.addEventListener('dragover', handleDragOver, false);
+        posterContainer.addEventListener('drop', handleFileSelect, false);
+    </script>
+</body>
+</html>
