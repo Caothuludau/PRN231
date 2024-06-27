@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>List of Movies</title>
+    <link rel="stylesheet" href="/css/ListMovies.css">
+</head>
+<body>
+    <div style="color: red;" id="msg"><h2>Your message here</h2></div>
+    <div class="header-container">
+        <h3>
+            <a href="/admin/shows" id="listshow">
+                <img 
+                    src="https://cdn.pixabay.com/photo/2017/06/10/07/18/list-2389219_1280.png" 
+                    alt="create" 
+                    id="add-btn" 
+                    style="width: 50px; height: 50px;">
+            </a>
+        </h3>
+        <h3>
+            <a href="/admin/movies/add" id="insertmovie">
+                <img 
+                    src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678092-sign-add-64.png" 
+                    alt="create" 
+                    id="add-btn" 
+                    style="width: 50px; height: 50px;">
+            </a>
+        </h3>
+    </div>
+
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Redob</th>
+            <th>Duration</th>
+            <th>Rate</th>
+            <th>Poster</th>
+            <th>Views</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <!-- Replace this static content with actual data or dynamic placeholders as necessary -->
+        <tr>
+            <td>Sample Title</td>
+            <td>2023-05-20</td>
+            <td>120</td>
+            <td>PG-13</td>
+            <td><img src="/path/to/poster.jpg" class="poster" alt="Poster"></td>
+            <td>1000</td>
+            <td>
+                <a href="/admin/movies/edit?mid=1">
+                    <img 
+                        src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-refresh-64.png" 
+                        alt="edit" 
+                        id="edit-btn" 
+                        style="width: 50px; height: 50px;">
+                </a>
+            </td>
+            <td>
+                <a href="/admin/movies/delete?mid=1">
+                    <img 
+                        src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_delete_48px-64.png" 
+                        alt="delete" 
+                        id="delete-btn" 
+                        style="width: 50px; height: 50px;">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="pagination-container">
+        <a href="/admin/movies?page=0" class="pre-next-class">Previous</a>
+        <div>
+            <!-- Pagination links -->
+            <a href="/admin/movies?page=0" class="page-index">1</a>
+            <a href="/admin/movies?page=1" class="page-index">2</a>
+            <a href="/admin/movies?page=2" class="page-index">3</a>
+        </div>
+        <a href="/admin/movies?page=1" class="pre-next-class">Next</a>
+    </div>
+</body>
+</html>

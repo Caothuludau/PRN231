@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Delete Movie Confirmation</title>
+</head>
+<body>
+    <form action="/admin/movies/delete" method="POST">
+        <input type="hidden" name="operationType" value="delete"/>
+        <input type="hidden" name="movie" value="1"/>
+        <p>
+            The system detected 5 shows that are related to the movie you are trying to delete.
+            In order to delete the movie, all shows that are related to such movie will be deleted as well.
+            Are you sure you want to continue?
+        </p>
+        <button type="submit">Yes</button>
+    </form>
+    <button onclick="window.location.href='/admin/movies'">No</button>
+</body>
+</html>

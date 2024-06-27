@@ -1,0 +1,54 @@
+﻿@page
+@model Q2.Pages.Home.ListOfMoviesModel
+@{
+}
+
+<h1>Author</h1>
+@foreach (var s in Model.listStudios)
+{
+    <a> @s.StudioName </a>
+}
+
+<h1>Add new movie</h1>
+
+<form method="post">
+    <div>
+        <label>Movie</label>
+        <input />
+    </div>
+    @* <div>
+        <label>Movie Title</label>
+        <input asp-for="Movie.Title" class="form-control" type="text"/>
+    </div>
+    <div>
+        <label asp-for="Movie.StudioId">Studio</label>
+        <select asp-for="Movie.StudioId" class="form-control">
+            @foreach (var iStudio in Model.Studios)
+            {
+                <option value="@iStudio.StudioId">@iStudio.StudioName</option>
+            }
+        </select>
+    </div> *@
+    <div>
+        <input type="submit" value="Add new" class="btn btn-primary" />
+    </div>
+</form>
+
+<h1>List of movies</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Title</th>
+		</tr>
+	</thead>
+	<tbody>
+		@* @foreach (var iMovie in Model.Movies)
+		{
+			<tr>
+				<td>@iMovie.MovieId</td>
+				<td>@iMovie.Title</td>
+			</tr>
+		} *@
+	</tbody>
+</table>
