@@ -1,0 +1,53 @@
+﻿@page
+@model Q2.Pages.EmployeeModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Q2.Dtos
+@{
+}
+
+<form method="post">
+	EmployeeId:
+	<input asp-for="employee.EmployeeId" type="text" /> </br>
+	Name:
+	<input asp-for="employee.Name" type="text" /></br>
+	Gender: Male 
+	<input asp-for="employee.Gender" type="radio" value="Male" />
+	Female 
+	<input asp-for="employee.Gender" type="radio" value="Female" /></br>
+	Dob: 
+	<input asp-for="employee.Dob" type="date" /></br>
+	Position: 
+	<input asp-for="employee.Position" type="text" /></br>
+	IsFullTime: 
+	<input asp-for="employee.IsFulltime" type="checkbox" /></br>
+	<input type="submit" value="Add new Employee" />
+</form>
+
+@if (Model.Employees != null)
+{
+	<table border="1">
+		<thead>
+			<tr>
+				<th>EmployeeId</th>
+				<th>Name</th>
+				<th>Gender</th>
+				<th>Dob</th>
+				<th>Position</th>
+				<th>IsFulltime</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var iEm in Model.Employees)
+			{
+				<tr>
+					<td>@iEm.EmployeeId</td>
+					<td>@iEm.Name</td>
+					<td>@iEm.Gender</td>
+					<td>@iEm.Dob</td>
+					<td>@iEm.Position</td>
+					<td>@iEm.IsFulltime</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}

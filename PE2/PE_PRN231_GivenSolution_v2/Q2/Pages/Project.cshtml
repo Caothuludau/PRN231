@@ -1,0 +1,56 @@
+﻿@page
+@model Q2.Pages.ProjectModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Q2.Dtos
+@{
+	var mess = TempData["mess"];
+}
+
+<form method="post">
+	projectId:
+	<input asp-for="project.ProjectId" type="text" /> </br>
+	projectName:
+	<input asp-for="project.ProjectName" type="text" /></br>
+	projectDescription:
+	<input asp-for="project.ProjectDescription" type="text" /></br>
+	startDate:
+	<input asp-for="project.StartDate" type="date" /></br>
+	endDate:
+	<input asp-for="project.EndDate" type="date" /></br>
+	isActive:
+	<input asp-for="project.IsActive" type="checkbox" /></br>
+	<input type="submit" value="Add new Project" />
+</form>
+
+@if (mess != null)
+{
+	<p>@mess.ToString()</p>
+}
+@if (Model.projects != null)
+{
+	<table border="1">
+		<thead>
+			<tr>
+				<th>projectId</th>
+				<th>projectName</th>
+				<th>projectDescription</th>
+				<th>startDate</th>
+				<th>endDate</th>
+				<th>isActive</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model.projects)
+			{
+				<tr>
+					<td>@item.ProjectId</td>
+					<td>@item.ProjectName</td>
+					<td>@item.ProjectDescription</td>
+					<td>@item.StartDate</td>
+					<td>@item.EndDate</td>
+					<td>@item.IsActive</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
